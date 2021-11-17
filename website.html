@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edtech: All In One Website for Various Educational Platforms</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Work+Sans:wght@200&display=swap"
+        rel="stylesheet">
+        
+    <style>
+            :root {
+    --bg: #dcdde1;     
+    --color-icon: #535c68;  
+    --social-icon1: #e4405f;
+    --social-icon2: #3b5999;
+    --social-icon3: #e4405f;
+    --social-icon4: #cd201f;
+    --social-icon5: #0077B5;  
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;  
+  }
+  
+  section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    background: var(--bg);
+    z-index: -10;
+  }
+  
+  .icon-list {
+    width: 100%;
+    max-width: 50rem;
+    padding: 0 1.5rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .icon-item {
+    list-style: none
+  }
+  
+  .icon-link {  
+    display: inline-flex;
+    font-size: 3rem;  
+    text-decoration: none;  
+    color: var(--color-icon);
+    width: 6rem;
+    height: 6rem;   
+    transition: .5s linear;
+    position: relative;
+    z-index: 1;
+    margin: auto
+  }
+  
+  .icon-link:hover {
+    color: #fff;
+  }
+  
+  .icon-link i {
+    margin: auto;    
+  }
+  
+  .icon-link::before {  
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 6rem;
+    height: 6rem;
+    background: #000;
+    border-radius: 50%;
+    z-index: -1;
+    transform: scale(0);
+    transition: 0.3s cubic-bezier(.95, .32, .37, 1.21);
+  }
+    
+  .icon-link:hover::before {  
+    transform: scale(1);
+  }
+  
+  .icon-item:nth-child(1) a:hover:before { 
+    background: var(--social-icon1); 
+  }
+  
+  .icon-item:nth-child(2) a:hover:before { 
+    background: var(--social-icon2); 
+  }
+  
+  .icon-item:nth-child(3) a:hover:before { 
+    background: var(--social-icon3); 
+  }
+  
+  .icon-item:nth-child(4) a:hover:before { 
+    background: var(--social-icon4); 
+  }
+  
+  .icon-item:nth-child(5) a:hover:before { 
+    background: var(--social-icon5); }
+
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url('bg.jpg');
+            color: white;
+            font-family: 'Noto Serif', serif;
+            height: 400px;
+            
+
+        }
+
+        .left {
+            color: white;
+            display: inline-block;
+            position: absolute;
+            left: 31px;
+            top: 30px
+        }
+
+        .left img {
+            width: 232px;
+            height: 170px;
+        }
+
+        .left-text {
+            text-align: center;
+            padding: 3px 8px;
+            left: 16px;
+            margin: 5px 17px;
+            display: inline-block;
+            text-decoration: bisque;
+            top: 42px;
+        }
+
+        .mid {
+            display: block;
+
+            width: 45%;
+            color: white;
+            margin: 21px auto;
+            font-weight: bolder
+        }
+
+        .navbar {
+            display: inline-block;
+
+
+        }
+
+        .navbar li {
+
+            display: inline-block;
+            font-size: 18.5px;
+
+
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 34px 24px;
+            position: relative;
+        }
+
+        .navbar li a:hover {
+            color: rgb(221, 0, 37);
+            text-decoration: underline;
+            background-color: black;
+            border-radius: 20px;
+
+        }
+
+        h4 {
+            border-radius: 20px;
+            text-align: center;
+            justify-content: center;
+            margin: 97px 301px;
+            padding: 26px 46px;
+            display: inline-block;
+            text-decoration: underline;
+            font-size: 20px;
+            background-color: black;
+            text-emphasis-color: red;
+            letter-spacing: 3px;
+            font-family: 'Merriweather', serif;
+        }
+
+        .i {
+
+            text-align: center;
+            margin: 3px 35px;
+            padding: 3px 143px;
+            display: inline-block;
+            letter-spacing: 5px;
+            font-size: 25px;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+
+        .Unacademy img {
+            width: 420px;
+            height: 323px;
+            padding: 21px 46px;
+            margin: 7px -18px;
+            display: inline-block;
+
+            border-radius: 20px;
+
+        }
+
+        .Vedantu img {
+            width: 420px;
+            height: 323px;
+            padding: 27px 21px;
+            margin: 1px 4px;
+            display: inline-block;
+
+        }
+
+        .pw img {
+            width: 420px;
+            height: 323px;
+            padding: 26px 31px;
+            margin: 0px 10px;
+            display: inline-block;
+        }
+
+        .Allen img {
+            width: 420px;
+            height: 323px;
+            padding: 1px -1px;
+            margin: 9px 9px 19px 29px;
+            display: inline-block;
+        }
+
+        .aakash img {
+            width: 420px;
+            height: 323px;
+            padding: 16px 45px;
+            margin: 5px 4px;
+            display: inline-block;
+        }
+
+        .byjus img {
+            width: 420px;
+            height: 323px;
+            margin: 18px 10px;
+            padding: 5px 1px;
+            display: inline-block;
+        }
+
+        h2 {
+            text-align: center;
+            letter-spacing: 5px;
+            font-family: 'Work Sans';
+            padding: 24px 67px;
+            margin: 29px 33px;
+            z-index: 133;
+        }
+
+        .container {
+            width: 13%;
+            padding: 32px 111px;
+
+            border-radius: 8px;
+            margin: 17px 548px;
+        }
+
+        .form-group input {
+            display: inline-block;
+            text-align: center;
+            padding: 28px 112px;
+            margin: 12px -103px;
+            border: 2px solid darkblue;
+            border-radius: 14px;
+            background-color: black;
+            font-family: 'Work Sans';
+            font-weight: bolder;
+            color: white;
+        }
+
+        .btn {
+            border: 2px solid darkcyan;
+            border-radius: 8px;
+            width: 365px;
+            height: 71px;
+            padding: 18px 38px;
+            margin: 20px -103px;
+            cursor: pointer;
+            background-color: black;
+            color: white;
+            font-size: 25px;
+            text-align: center;
+            justify-content: center;
+            font-family: 'Work Sans';
+        }
+
+        .btn:hover {
+            background-color: cyan;
+            color: rgb(4, 65, 70);
+        }
+
+        .foot {
+            border: 2px solid #033f15b0;
+            border-radius: -65px;
+            padding: 48px 0px;
+            margin: 48px -662px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            font-family: 'Work Sans';
+            font-size: 25px;
+            color: white;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- Left Box For Logo -->
+        <div class="left">
+            <img src="LOGO.png.jpg" alt="Edtech">
+        </div>
+        <div class="left-text">Edtech:All Problems One Solution</div>
+        <div class="mid">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="http://127.0.0.1:5501/website.html">Home</a></li>
+                    <li><a href="https://edtechhub.org/"target='_blank'>About US</a></li>
+                    <li><a href="https://collabs.se/"target='_blank'>Our Buisness Partners</a></li>
+                    <li><a href="https://www.linkedin.com/in/vansh-gupta-3a2110200/"target='_blank'>Contact us</a></li>
+
+                </ul>
+            </nav>
+
+        </div>
+
+
+    </header>
+    <h4>Our Only Aim is to bring Ease to Students So that they cannot have any reason  for not to Study!</h4>
+    <h5 class="i">Top Coachings In 2021 For the preparation of Competetive Exams: </h5><br><br><br><br>
+    <!-- Main content -->
+    <div class="main">
+        <span class="Unacademy"><a href="https://unacademy.com/goal/jee-main-and-advanced-preparation/TMUVD"
+                target='_blank'><img src="Un.jpg" alt=""></a></span>
+        <span class="Vedantu"><a href="https://www.vedantu.com/"target='_blank'><img src="Vedantu.jpg" alt="Vedantu"></a></span>
+        <span class="pw"><a href="https://www.physicswallah.live/landing-page"target='_blank'><img src="phys.jpg" alt=""></a></span>
+        <br><br>
+        <span class="Allen"><a href="https://www.allen.ac.in/"target='_blank'><img src="Allen-Logo-1.jpg" alt=""></a></span>
+        <span class="aakash"><a href="https://www.aakash.ac.in/"target='_blank'><img src="akash.jpeg" alt=""></a></span>
+        <span class="byjus"><a href="https://byjus.com/"target='_blank'><img src="byjus.jpg" alt=""></a></span>
+    </div>
+    <div class="contaner" id="place1"></div>
+    <div class="contaner" id="place2"></div>
+    <div class="contaner" id="place3"></div>
+    <div class="contaner" id="place4"></div>
+    <hr>
+    <h2>Still Confused?xD, Ayee No Worries We are here to help you out! Just fill the Form and Our Councellor will Reach
+        out to you within next 24 Hours</h2>
+        
+    <div class="container">
+        <form action="noaction.php"></form>
+        <div class="form-group">
+            <input type="text" name="" id="" placeholder="Enter Your Name">
+            <input type="number" name="" id="" placeholder="Enter Your Mobile Number">
+            <input type="number" name="" id="" placeholder="Enter Your Class">
+            <input type="text " placeholder="Enter Your Gender">
+            <input type="number" name="" id="" placeholder="Enter Your Age">
+            <input type="text" name="" id="" placeholder="Enter Your Stream">
+           
+            <button class="btn" value="submit">Submit</button>
+
+        <br><br><br><br><br><br><br>
+       
+
+        
+
+
+
+        <footer class="foot">All Copyrights Reserved To The Owner of The Website ©2021-20</footer>
+    </div>
+</body>
+
+</html>
